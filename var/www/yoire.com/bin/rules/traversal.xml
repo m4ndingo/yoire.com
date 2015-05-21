@@ -1,0 +1,6 @@
+<description>Traversal attacks</description>
+<search>
+	<item>../</item>
+	<item>///</item>
+	<item>/proc/self/environ</item>
+</search>

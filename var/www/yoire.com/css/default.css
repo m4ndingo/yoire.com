@@ -1,0 +1,151 @@
+body{
+	background:#bba;
+	color:white;
+	font-family:courier new;
+	font-size:14px;
+}
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0}
+table{
+	font-size:14px;
+}
+a{
+	color:white;
+}
+a:hover{
+	text-decoration:none;
+}
+a.clean{
+	text-decoration:none;
+}
+a.clean:hover{
+	text-decoration:underline;
+}
+
+.level{
+	font-family:verdana;
+	font-size:40px;
+	padding-bottom:10px;
+}
+
+.infoBox{
+	background:#555;
+	padding:5px;
+	margin-bottom:5px;
+}
+.errorBox{
+	background:#400;
+	padding:5px;
+	margin-bottom:5px;
+	border:solid 8px #a00;
+}
+.footer{
+	font-size:12px;
+	background:#444;
+	padding:5px;
+	color:#bbb;
+	margin-top:20px;
+}
+.header{
+	background:#444;
+	margin-bottom:10px;
+	padding:5px;
+}
+.header a{
+	font-size:12px;
+}
+.intro{
+	margin-left:20px;
+}
+.errorMessage{
+	font-size:20px;
+	border:dashed 2px;
+	background:#020;
+	color:#0f0;
+	padding:10px;
+}
+pre{
+	font-size: 12pt; 
+	font-family: 'Lucida Console', monospace;
+	padding:10px;
+}
+.rankTable td{
+	border:solid 1px;
+	color:#0f0;
+	background:#131;
+}
+.onlineTable td{
+	border:solid 1px;
+	color:#ddf;
+	background:#113;
+}
+.inboxTable .small{
+	font-size:11px;
+}
+.inboxTable .header{
+	background:#0f0;
+	color:#131;
+}
+.inboxTable td{
+	border:solid 1px;
+	color:#0f0;
+	background:#131;
+	font-size:12px;
+}
+.pi{
+	position:absolute; bottom:15px;right:0;margin-right:5px;
+}
+.terminal{
+	border:solid 1px;
+	color:#0f0;
+	background:#131;
+	padding:10px;
+	font-size:18px;
+}
+.terminal_auto{
+	border:solid 1px;
+	color:#0f0;
+	background:#131;
+	padding:10px;
+	padding-left:8px;
+	width:60%;
+	margin-bottom:0px;
+	font-family:courier new;
+	word-wrap:break-word;
+}
+.terminal_sort{
+	border:solid 1px;
+	color:#0f0;
+	background:#131;
+	padding:10px;
+	padding-left:8px;
+	height:25%;
+	width:60%;
+	margin-bottom:0px;
+	font-family:courier new;
+}
+.terminal_chat{
+	border:solid 1px;
+	color:#0f0;
+	background:#131;
+	padding:0px;
+	padding-left:8px;
+	height:65%;
+	margin-bottom:0px;
+	font-family:courier new;
+}
+.n0p{
+	background:#311;
+	color:#f00;
+}
+.n1p{
+	background:#131;
+	color:#0f0;
+}
+.chall_header{
+	background:#555;
+	margin-bottom:10px;
+	padding:5px;
+}
+.quote{
+	border-bottom:dotted 1px;
+}

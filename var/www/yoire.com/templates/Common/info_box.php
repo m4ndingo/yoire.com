@@ -1,0 +1,1 @@
+<div class=infoBox align="<?=$vars["align"]?>"><?=$vars["msg"]?></div>

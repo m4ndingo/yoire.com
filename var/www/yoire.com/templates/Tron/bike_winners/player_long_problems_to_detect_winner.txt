@@ -1,0 +1,44 @@
+function controller(playerController $c){
+$c->inicio = 0;
+                $min_d = 1;
+		if($c->direction()==UP && ($c->getY()<=$min_d|| $c->collisionDistance() <= $min_d)){
+			//must turn left of right
+			if($c->collisionDistance(LEFT)>=$c->collisionDistance(RIGHT)) $c->direction(LEFT);
+				else $c->direction(RIGHT);
+		}
+		else if($c->direction()==DOWN && (MAX_Y-$c->getY()<=$min_d || $c->collisionDistance() <= $min_d)){
+			//must turn left of right
+			if($c->collisionDistance(LEFT)>=$c->collisionDistance(RIGHT)) $c->direction(LEFT);
+				else $c->direction(RIGHT);
+		}
+		else if($c->direction()==LEFT && ($c->getX()<=$min_d|| $c->collisionDistance() <= $min_d)){
+			//must turn up or down
+			if($c->collisionDistance(UP)>=$c->collisionDistance(DOWN)) $c->direction(UP);
+				else $c->direction(DOWN);
+		}else if($c->direction()==RIGHT && (MAX_X-$c->getX()<=$min_d|| $c->collisionDistance() <= $min_d)){
+			//must turn up or down
+			if($c->collisionDistance(UP)>=$c->collisionDistance(DOWN)) $c->direction(UP);
+				else $c->direction(DOWN);
+		}else if($inicio){
+                   $max_d = 0;
+                   $max_dd = NULL;
+                   if ($c->collisionDistance(DOWN) > $max_dd) {
+                       $max_dd = $c->collisionDistance(DOWN);
+                       $max_d = DOWN;
+                   }
+                   if ($c->collisionDistance(UP) > $max_dd) {
+                       $max_dd = $c->collisionDistance(UP);
+                       $max_d = UP;
+                   }
+                   if ($c->collisionDistance(LEFT) > $max_dd) {
+                       $max_dd = $c->collisionDistance(LEFT);
+                       $max_d = LEFT;
+                   }
+                   if ($c->collisionDistance(RIGHT) > $max_dd) {
+                       $max_dd = $c->collisionDistance(RIGHT);
+                       $max_d = RIGHT;
+                   }
+                   if ($max_dd)
+                       $c->direction($max_d);
+            }
+	}

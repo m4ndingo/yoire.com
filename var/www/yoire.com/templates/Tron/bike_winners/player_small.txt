@@ -1,0 +1,12 @@
+	function controller(playerController $c){
+		if (false) {
+		} else if ($c->direction()==UP    && $c->getY()<2) { $c->direction(LEFT );
+		} else if ($c->direction()==LEFT  && $c->getX()<2) { $c->direction(DOWN );
+		} else if ($c->direction()==DOWN  && $c->getY()>MAX_Y-3) { $c->direction(RIGHT);
+		} else if ($c->direction()==RIGHT && $c->getX()>MAX_X-3) { $c->direction(UP   );
+		} else if ($c->direction()==UP    && $c->collisionDistance(UP   )<4) { $c->direction(RIGHT); 
+		} else if ($c->direction()==LEFT  && $c->collisionDistance(LEFT )<4) { $c->direction(UP   ); 
+		} else if ($c->direction()==DOWN  && $c->collisionDistance(DOWN )<4) { $c->direction(LEFT ); 
+		} else if ($c->direction()==RIGHT && $c->collisionDistance(RIGHT)<4) { $c->direction(DOWN ); 
+		}
+	}
